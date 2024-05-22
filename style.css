@@ -1,0 +1,53 @@
+/*Este es un comentario en CSS*/
+/*ME MARTINEZ RIVERA KAROL VALERIA GRUPO:4BPV*/
+/*DAW(Desarrolla Aplicaciones WEB) Fecha: 06 de mayo del 2024*/
+/*A continuación le aplicamos CSS a al actividad menus(index.html). Desde un Archivo CSS(style.css)*/
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right bottom, gold, chocolate);
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	font-size: 40px;
+	font-family: sans-serif;
+	background-color: rgba(184, 73, 194, 0.61);
+	border: 2px solid rgba(0, 0, 0, 0.411);
+	letter-spacing: 0.1em;
+	width: 10em;
+	height: 2em;
+	line-height: 2em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+nav ul li span {
+	color: rgb(43, 12, 179);
+	mix-blend-mode: difference;
+}
+
+nav ul li::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: rgb(5, 126, 134);
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+	transform: scale(7);
+}
